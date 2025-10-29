@@ -1,0 +1,150 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.leaseCard {
+  position: relative;
+  height: 100%;
+  transition: var(--transition-smooth);
+  border: 2px solid hsl(var(--border));
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  &.highlighted {
+    border-color: hsl(var(--primary));
+    box-shadow: var(--shadow-glow);
+    
+    .cardContent {
+      background: var(--gradient-card);
+    }
+  }
+}
+
+.cardContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.popularBadge {
+  position: absolute;
+  top: -12px;
+  right: 1.5rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.header {
+  text-align: center;
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin: 0;
+}
+
+.malayalamName {
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+  margin: 0.25rem 0 0;
+  font-weight: 500;
+}
+
+.pricing {
+  text-align: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.priceAmount {
+  display: flex;
+  align-items: baseline;
+}
+
+.currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(var(--primary));
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: hsl(var(--primary));
+  line-height: 1;
+  
+  @include mobile {
+    font-size: 2.5rem;
+  }
+}
+
+.period {
+  font-size: 1.25rem;
+  color: hsl(var(--muted-foreground));
+  font-weight: 500;
+}
+
+.deposit {
+  text-align: center;
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin: -0.5rem 0 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: hsl(var(--foreground));
+  line-height: 1.5;
+}
+
+.checkIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: hsl(var(--primary));
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.selectButton {
+  width: 100%;
+  font-weight: 600;
+  transition: var(--transition-base);
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  margin: 0.5rem 0 0;
+}

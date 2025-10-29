@@ -1,0 +1,376 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.leasePage {
+  min-height: 100vh;
+  background: hsl(var(--background));
+}
+
+.container {
+  @include container;
+}
+
+// Hero Section
+.hero {
+  position: relative;
+  padding: 6rem 0 4rem;
+  @include gradient-bg(135deg);
+  color: hsl(var(--primary-foreground));
+  overflow: hidden;
+  
+  @include mobile {
+    padding: 4rem 0 3rem;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.1), transparent);
+  }
+}
+
+.heroContent {
+  @include container;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  @include heading-1;
+  color: hsl(var(--primary-foreground));
+  margin: 0 0 1rem;
+  
+  .highlight {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 0.5rem;
+    border-radius: var(--radius-md);
+  }
+}
+
+.heroSubtitle {
+  font-size: var(--text-2xl);
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.heroDescription {
+  @include body-large;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroCtas {
+  @include flex-center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryCta,
+.secondaryCta {
+  gap: 0.5rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.secondaryCta {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: hsl(var(--primary-foreground));
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+// Sections
+.pricing,
+.included,
+.howItWorks,
+.faq,
+.leadForm {
+  padding: 5rem 0;
+  
+  @include mobile {
+    padding: 3rem 0;
+  }
+}
+
+.sectionTitle {
+  @include heading-2;
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: hsl(var(--foreground));
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: var(--text-xl);
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 3rem;
+  font-weight: 600;
+}
+
+// Pricing Grid
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Features Grid
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-card);
+  border: 1px solid hsl(var(--border));
+  transition: var(--transition-smooth);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: hsl(var(--primary));
+  }
+  
+  h3 {
+    @include heading-3;
+    margin: 1rem 0 0.5rem;
+    color: hsl(var(--foreground));
+  }
+  
+  p {
+    @include body-base;
+    color: hsl(var(--muted-foreground));
+    margin: 0;
+  }
+}
+
+.featureIcon {
+  @include flex-center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: hsl(var(--eco-green-light));
+  color: hsl(var(--primary));
+  
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.warrantyLink {
+  padding: 0;
+  height: auto;
+  font-size: inherit;
+  color: hsl(var(--primary));
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// How It Works
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  
+  h3 {
+    @include heading-3;
+    margin: 1rem 0 0.5rem;
+    color: hsl(var(--foreground));
+  }
+  
+  p {
+    @include body-base;
+    color: hsl(var(--muted-foreground));
+    margin: 0;
+  }
+}
+
+.stepNumber {
+  @include flex-center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  box-shadow: var(--shadow-glow);
+}
+
+.stepsFootnote {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: hsl(var(--muted-foreground));
+  font-style: italic;
+  margin: 0;
+}
+
+// FAQ
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqQuestion {
+  @include body-large;
+  font-weight: 600;
+  text-align: left;
+  
+  &:hover {
+    color: hsl(var(--primary));
+  }
+}
+
+.faqAnswer {
+  @include body-base;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.7;
+}
+
+// Lead Form
+.leadForm {
+  background: var(--gradient-card);
+  border-top: 1px solid hsl(var(--border));
+}
+
+.formCard {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: var(--radius-xl);
+  background: hsl(var(--card));
+  border: 2px solid hsl(var(--border));
+  box-shadow: var(--shadow-lg);
+  
+  @include mobile {
+    padding: 2rem;
+  }
+}
+
+.formTitle {
+  @include heading-2;
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: hsl(var(--foreground));
+}
+
+.formSubtitle {
+  text-align: center;
+  font-size: var(--text-lg);
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 2rem;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radioItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition-base);
+  
+  &:hover {
+    background: hsl(var(--eco-green-light));
+  }
+  
+  label {
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius-md);
+  
+  label {
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  margin-top: 1rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+// Dialog Override
+.dialogContent {
+  max-width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  
+  @include desktop {
+    max-width: 900px;
+  }
+}

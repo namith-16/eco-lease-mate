@@ -1,0 +1,189 @@
+=== EcoScoot Leasing Page - English & Malayalam Copy ===
+
+HERO SECTION
+------------
+English: Lease a scooter. Zero up-front.
+Malayalam: ഒരു സ്കൂട്ടർ വാടകയ്ക്ക് എടുക്കുക
+
+English: Flexible terms, maintenance & insurance included.
+Malayalam: വഴക്കമുള്ള വ്യവസ്ഥകൾ, അറ്റകുറ്റപ്പണികളും ഇൻഷുറൻസും ഉൾപ്പെടുന്നു
+
+CTA Buttons:
+English: Calculate Your Lease
+Malayalam: കണക്കുകൂട്ടൽ
+
+English: Book a Demo / Call
+Malayalam: ബുക്ക് ചെയ്യുക
+
+
+PRICING SECTION
+---------------
+English: Choose Your Plan
+Malayalam: പ്ലാൻ തിരഞ്ഞെടുക്കുക
+
+Plans:
+- Hourly / മണിക്കൂറിൽ
+- Daily / ദിവസം
+- Monthly / മാസം
+
+
+WHAT'S INCLUDED SECTION
+-----------------------
+English: What's Included
+Malayalam: ഉൾപ്പെട്ടിരിക്കുന്നത്
+
+Features:
+- Maintenance & Insurance / അറ്റകുറ്റപ്പണികളും ഇൻഷുറൻസും
+- 24/7 Roadside Assistance / 24/7 സഹായം
+- Battery Warranty / ബാറ്ററി വാറന്റി
+- Trade-in Credit / പഴയ വാഹന ക്രെഡിറ്റ്
+- Fleet Dashboard / ഫ്ലീറ്റ് ഡാഷ്ബോർഡ്
+- Flexible Upgrades / വഴക്കമുള്ള അപ്ഗ്രേഡുകൾ
+
+
+HOW IT WORKS
+------------
+English: How It Works
+Malayalam: എങ്ങനെ പ്രവർത്തിക്കുന്നു
+
+Steps:
+1. Book Online / ഓൺലൈൻ ബുക്ക് ചെയ്യുക
+2. Inspect Trade-in / പഴയ വാഹനം പരിശോധിക്കുക
+3. Sign & Ride / സൈൻ ചെയ്ത് ഓടിക്കുക
+4. Support & Upgrade / സപ്പോർട്ടും അപ്ഗ്രേഡും
+
+
+FAQ SECTION
+-----------
+English: Frequently Asked Questions
+Malayalam: പതിവായി ചോദിക്കുന്ന ചോദ്യങ്ങൾ
+
+
+LEAD FORM
+---------
+English: Get Started Today
+Malayalam: ഇന്ന് ആരംഭിക്കുക
+
+
+CALCULATOR
+----------
+English: Lease Calculator
+Malayalam: കണക്കുകൂട്ടൽ
+
+
+SHORT HERO TAGLINES (ALTERNATE OPTIONS)
+---------------------------------------
+1. "Ride green. Pay monthly. Zero hassle."
+2. "Electric freedom, flexible payments."
+3. "Your scooter. Your terms. Zero emissions."
+
+
+SOCIAL MEDIA CAPTIONS (15-25 words)
+-----------------------------------
+1. "Lease an EcoScoot with zero upfront cost. Maintenance, insurance, and 24/7 support included. Calculate your plan today! #EcoScoot #ElectricScooter"
+
+2. "Go electric without breaking the bank. Flexible lease plans starting at ₹7,599/month. Trade-in your old ride for instant credit. #SustainableTransport"
+
+3. "Book your EcoScoot lease online in minutes. Drive away the same day with paperwork handled. Upgrade anytime! #SmartMobility #ZeroEmissions"
+
+
+SEO META SUGGESTIONS
+--------------------
+Title (55-60 chars): "EcoScoot Lease Plans | Electric Scooter Leasing from ₹7,599/mo"
+
+Description (150-160 chars): "Lease an electric scooter with zero upfront cost. Flexible monthly plans include maintenance, insurance & 24/7 support. Calculate your lease today."
+
+Keywords: electric scooter lease, EV lease India, scooter subscription, zero upfront lease, electric vehicle rental, eco-friendly transport
+
+H1: "Lease a Scooter. Zero Up-front."
+H2 Examples:
+- "Choose Your Plan"
+- "What's Included in Every Lease"
+- "How EcoScoot Leasing Works"
+- "Frequently Asked Questions"
+
+
+PROMO CODES (for calculator)
+-----------------------------
+FIRST10 = 10% discount (first-time customers)
+ECO15 = 15% discount (eco promotion)
+LULU5 = 5% discount (Lulu Mall event attendees)
+
+
+SAMPLE CALCULATOR VALUES
+------------------------
+Example 1: 6-month lease
+- Monthly price: ₹7,599
+- Lease duration: 6 months
+- Trade-in credit: ₹5,000
+- Deposit: ₹5,000
+- Maintenance add-on: No
+- Promo code: FIRST10
+- Tax rate: 18%
+
+Calculated outputs:
+- Base total: ₹45,594
+- Promo discount: -₹4,559.40
+- Total after discount: ₹41,034.60
+- Tax (GST): ₹7,386.23
+- Net total: ₹48,420.83
+- Upfront due: ₹5,000
+- Monthly payment: ₹8,070.14
+
+Example 2: 12-month lease
+- Monthly price: ₹7,599
+- Lease duration: 12 months
+- Trade-in credit: ₹0
+- Deposit: ₹5,000
+- Maintenance add-on: Yes
+- Promo code: ECO15
+- Tax rate: 18%
+
+Calculated outputs:
+- Base total: ₹91,188
+- Maintenance cost: ₹5,988
+- Total before discount: ₹97,176
+- Promo discount: -₹14,576.40
+- Total after discount: ₹82,599.60
+- Tax (GST): ₹14,867.93
+- Net total: ₹102,467.53
+- Upfront due: ₹5,000
+- Monthly payment: ₹8,538.96
+
+
+ONBOARDING EMAIL TEMPLATE (Sales)
+----------------------------------
+Subject: Your EcoScoot Lease Quote - [Customer Name]
+
+Dear [Customer Name],
+
+Thank you for your interest in EcoScoot!
+
+Attached is your personalized lease quote based on our conversation:
+
+Plan: [Monthly/Daily/Hourly]
+Duration: [X months]
+Monthly Payment: ₹[amount]
+Upfront Payment: ₹[amount]
+Trade-in Credit Applied: ₹[amount]
+
+What happens next?
+1. Review your quote and let us know if you have questions
+2. Schedule a test ride at your nearest location
+3. Complete the simple online application
+4. Ride away the same day!
+
+What's included:
+✓ All maintenance & insurance
+✓ 24/7 roadside assistance
+✓ Battery warranty (3yrs/50,000km)
+✓ Flexible upgrade options
+
+Questions? Reply to this email or call us at +91 1800 XXX XXXX
+
+Let's make the switch to electric together!
+
+Best regards,
+The EcoScoot Team
+
+P.S. Your quote is valid for 30 days. Use promo code [CODE] for [X]% off!
