@@ -20,7 +20,423 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main class="lease-page">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Lease a Scooter. <span class="highlight">Zero Up-front.</span>
+          </h1>
+          <p class="hero-subtitle">സ്‌കൂട്ടർ ലീസ് ചെയ്യുക. മുൻകൂർ പേയ്‌മെന്റ് ഇല്ല.</p>
+          <p class="hero-description">
+            Flexible lease terms with maintenance & insurance included. Ride green, pay monthly.
+          </p>
+          <div class="hero-ctas">
+            <button id="open-calculator" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="14"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+              Calculate Your Lease
+            </button>
+            <a href="tel:+911800XXXXXX" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Book a Demo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="section pricing">
+        <div class="container">
+          <h2 class="section-title">Flexible Pricing Plans</h2>
+          <p class="section-subtitle">Choose the lease term that works for you</p>
+          
+          <div class="pricing-grid">
+            <!-- 6 Month Plan -->
+            <div class="pricing-card">
+              <div class="card-badge">Short-term</div>
+              <h3 class="card-title">6 Month Lease</h3>
+              <div class="card-price">
+                <span class="price-amount">₹8,499</span>
+                <span class="price-period">/month</span>
+              </div>
+              <p class="card-deposit">₹5,000 security deposit</p>
+              <ul class="card-features">
+                <li>✓ All maintenance included</li>
+                <li>✓ Insurance covered</li>
+                <li>✓ 24/7 roadside support</li>
+                <li>✓ Flexible upgrade options</li>
+              </ul>
+              <button class="btn btn-primary">Choose Plan</button>
+              <p class="card-footnote">T&Cs apply • Prices subject to change</p>
+            </div>
+
+            <!-- 12 Month Plan (Popular) -->
+            <div class="pricing-card featured">
+              <div class="card-badge">Most Popular</div>
+              <h3 class="card-title">12 Month Lease</h3>
+              <div class="card-price">
+                <span class="price-amount">₹7,599</span>
+                <span class="price-period">/month</span>
+              </div>
+              <p class="card-deposit">Zero up-front cost</p>
+              <ul class="card-features">
+                <li>✓ All maintenance included</li>
+                <li>✓ Insurance covered</li>
+                <li>✓ 24/7 roadside support</li>
+                <li>✓ Trade-in credit available</li>
+              </ul>
+              <button class="btn btn-primary">Choose Plan</button>
+              <p class="card-footnote">T&Cs apply • Prices subject to change</p>
+            </div>
+
+            <!-- 24 Month Plan -->
+            <div class="pricing-card">
+              <div class="card-badge">Best Value</div>
+              <h3 class="card-title">24 Month Lease</h3>
+              <div class="card-price">
+                <span class="price-amount">₹6,999</span>
+                <span class="price-period">/month</span>
+              </div>
+              <p class="card-deposit">Zero up-front cost</p>
+              <ul class="card-features">
+                <li>✓ All maintenance included</li>
+                <li>✓ Insurance covered</li>
+                <li>✓ Extended battery warranty</li>
+                <li>✓ Priority support</li>
+              </ul>
+              <button class="btn btn-primary">Choose Plan</button>
+              <p class="card-footnote">T&Cs apply • Prices subject to change</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What's Included -->
+      <section class="section included">
+        <div class="container">
+          <h2 class="section-title">What's Included</h2>
+          <p class="section-subtitle">ലീസിൽ ഉൾപ്പെടുത്തിയിരിക്കുന്നത്</p>
+          
+          <div class="features-grid">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3>Maintenance & Insurance</h3>
+              <p>All servicing and insurance costs covered for worry-free riding</p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3>24/7 Roadside Assistance</h3>
+              <p>Round-the-clock support for emergencies and breakdowns</p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3>Battery Warranty</h3>
+              <p>Standard: 3 years / 50,000 km. Extendable to 5 years / 80,000 km</p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"/><path d="M12 3v6"/></svg>
+              </div>
+              <h3>Trade-in Credit</h3>
+              <p>Get instant credit for your old vehicle towards your lease</p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+              </div>
+              <h3>Flexible Upgrades</h3>
+              <p>Switch to newer models during your lease term</p>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <h3>Fleet Dashboard (B2B)</h3>
+              <p>Track and manage multiple vehicles with our fleet management tools</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="section how-it-works">
+        <div class="container">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">4 simple steps to start riding</p>
+          
+          <div class="steps-grid">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Book Your Lease</h3>
+              <p>Choose your plan and schedule a visit to our showroom or request a home demo</p>
+            </div>
+
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Inspect Trade-in</h3>
+              <p>Optional: Get your old vehicle inspected for instant trade-in credit</p>
+            </div>
+
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Sign & Ride</h3>
+              <p>Complete paperwork (we handle it) and ride off with your new EcoScoot</p>
+            </div>
+
+            <div class="step">
+              <div class="step-number">4</div>
+              <h3>Support & Upgrade</h3>
+              <p>Enjoy 24/7 support and flexible upgrade options throughout your lease</p>
+            </div>
+          </div>
+          
+          <p class="steps-footnote">Paperwork handled — upgrade in one visit</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">സാധാരണ ചോദ്യങ്ങൾ</p>
+          
+          <div class="faq-accordion">
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I buy the scooter after the lease ends?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! At the end of your lease, you have the option to purchase the scooter at a predetermined residual value. This will be outlined in your lease agreement.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What happens if I exceed the kilometer limit?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Our standard leases include generous kilometer limits. If you exceed the limit, there's a small per-km charge. You can also opt for unlimited kilometer plans.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How does the trade-in credit work?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Bring your old scooter or bike for a free inspection. We'll assess its value and apply the credit directly to reduce your monthly payments or upfront costs.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I extend the battery warranty?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! Our standard warranty is 3 years / 50,000 km, but you can extend it to 5 years / 80,000 km for an additional monthly fee.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Is the security deposit refundable?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, the security deposit is fully refundable at the end of your lease, provided the scooter is returned in good condition as per the lease terms.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How do I use promo codes?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Enter your promo code in the calculator above or mention it when booking. Current codes: FIRST10 (10% off), ECO15 (15% off), LULU5 (5% off for Lulu Mall customers).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lead Form -->
+      <section class="section lead-form">
+        <div class="container">
+          <div class="form-card">
+            <h2 class="form-title">Get Started Today</h2>
+            <p class="form-subtitle">Fill out the form and we'll contact you within 24 hours</p>
+            
+            <form id="lead-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label>I'm interested in:</label>
+                <div class="radio-group">
+                  <label class="radio-item">
+                    <input type="radio" name="interest" value="retail" checked />
+                    <span>Retail Lease</span>
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="interest" value="lease" />
+                    <span>Long-term Lease</span>
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="interest" value="fleet" />
+                    <span>Fleet/B2B</span>
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="interest" value="franchise" />
+                    <span>Franchise</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-group">
+                  <input type="checkbox" name="met_at_location" />
+                  <span>I met EcoScoot at Lulu Mall / Forum Mall / Expo</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Calculator Modal -->
+    <div id="calculator-modal" class="modal hidden">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Lease Calculator</h2>
+          <button id="close-calculator" class="modal-close">&times;</button>
+        </div>
+        
+        <div class="calculator-body">
+          <div class="calculator-inputs">
+            <div class="form-group">
+              <label for="months">Lease Duration</label>
+              <select id="months">
+                <option value="6">6 months</option>
+                <option value="12" selected>12 months</option>
+                <option value="18">18 months</option>
+                <option value="24">24 months</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="monthly-price">Monthly Base Price (₹)</label>
+              <input type="number" id="monthly-price" value="7599" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="promo-code">Promo Code</label>
+              <input type="text" id="promo-code" placeholder="FIRST10, ECO15, LULU5" />
+            </div>
+
+            <div class="form-group">
+              <label for="trade-in">Trade-in Credit (₹)</label>
+              <input type="number" id="trade-in" value="0" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="deposit">Security Deposit (₹)</label>
+              <input type="number" id="deposit" value="0" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-group">
+                <input type="checkbox" id="maintenance" />
+                <span>Extended Maintenance (₹499/month)</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="tax-rate">Tax Rate (%)</label>
+              <input type="number" id="tax-rate" value="18" min="0" max="100" step="0.01" />
+            </div>
+          </div>
+
+          <div class="calculator-outputs">
+            <h3>Cost Breakdown</h3>
+            
+            <div class="output-row">
+              <span>Base Total:</span>
+              <span id="calc-total">₹0</span>
+            </div>
+            
+            <div class="output-row">
+              <span>Promo Discount:</span>
+              <span id="calc-promo-discount" class="discount">₹0</span>
+            </div>
+            
+            <div class="output-row">
+              <span>Total Tax (GST):</span>
+              <span id="calc-total-tax">₹0</span>
+            </div>
+            
+            <div class="output-row total">
+              <span>Net Total:</span>
+              <span id="calc-net-total">₹0</span>
+            </div>
+            
+            <div class="output-highlight">
+              <div class="output-row">
+                <span>Upfront Payment:</span>
+                <span id="calc-upfront">₹0</span>
+              </div>
+              
+              <div class="output-row">
+                <span>Monthly Payment:</span>
+                <span id="calc-monthly">₹0</span>
+              </div>
+              
+              <div class="output-row">
+                <span>Monthly Tax:</span>
+                <span id="calc-monthly-tax">₹0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button id="reset-calculator" class="btn btn-secondary">Reset</button>
+          <button id="download-pdf" class="btn btn-primary">Download Quote PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
