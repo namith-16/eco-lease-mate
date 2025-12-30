@@ -50,13 +50,41 @@
           <h2 class="section-title">Flexible Pricing Plans</h2>
           <p class="section-subtitle">Choose the lease term that works for you</p>
           
+          <!-- Plan Toggle Switch -->
+          <div class="plan-toggle-container">
+            <span class="plan-label" data-plan="elite">EcoElite</span>
+            <button class="plan-toggle" id="plan-toggle" aria-label="Toggle between EcoElite and EcoBusiness plans">
+              <span class="toggle-slider"></span>
+            </button>
+            <span class="plan-label" data-plan="business">EcoBusiness</span>
+          </div>
+          
           <div class="pricing-grid">
+            <!-- 3 Month Plan -->
+            <div class="pricing-card">
+              <div class="card-badge">Starter</div>
+              <h3 class="card-title">3 Month Lease</h3>
+              <div class="card-price">
+                <span class="price-amount" id="price-3month">₹8,999</span>
+                <span class="price-period">/month</span>
+              </div>
+              <p class="card-deposit">₹5,000 security deposit</p>
+              <ul class="card-features">
+                <li>✓ All maintenance included</li>
+                <li>✓ Insurance covered</li>
+                <li>✓ 24/7 roadside support</li>
+                <li>✓ Try before committing</li>
+              </ul>
+              <button class="btn btn-primary">Choose Plan</button>
+              <p class="card-footnote">T&Cs apply • Prices subject to change</p>
+            </div>
+
             <!-- 6 Month Plan -->
             <div class="pricing-card">
               <div class="card-badge">Short-term</div>
               <h3 class="card-title">6 Month Lease</h3>
               <div class="card-price">
-                <span class="price-amount">₹8,499</span>
+                <span class="price-amount" id="price-6month">₹8,499</span>
                 <span class="price-period">/month</span>
               </div>
               <p class="card-deposit">₹5,000 security deposit</p>
@@ -75,7 +103,7 @@
               <div class="card-badge">Most Popular</div>
               <h3 class="card-title">12 Month Lease</h3>
               <div class="card-price">
-                <span class="price-amount">₹7,599</span>
+                <span class="price-amount" id="price-12month">₹7,999</span>
                 <span class="price-period">/month</span>
               </div>
               <p class="card-deposit">Zero up-front cost</p>
@@ -84,25 +112,6 @@
                 <li>✓ Insurance covered</li>
                 <li>✓ 24/7 roadside support</li>
                 <li>✓ Trade-in credit available</li>
-              </ul>
-              <button class="btn btn-primary">Choose Plan</button>
-              <p class="card-footnote">T&Cs apply • Prices subject to change</p>
-            </div>
-
-            <!-- 24 Month Plan -->
-            <div class="pricing-card">
-              <div class="card-badge">Best Value</div>
-              <h3 class="card-title">24 Month Lease</h3>
-              <div class="card-price">
-                <span class="price-amount">₹6,999</span>
-                <span class="price-period">/month</span>
-              </div>
-              <p class="card-deposit">Zero up-front cost</p>
-              <ul class="card-features">
-                <li>✓ All maintenance included</li>
-                <li>✓ Insurance covered</li>
-                <li>✓ Extended battery warranty</li>
-                <li>✓ Priority support</li>
               </ul>
               <button class="btn btn-primary">Choose Plan</button>
               <p class="card-footnote">T&Cs apply • Prices subject to change</p>
