@@ -148,6 +148,62 @@ function initLeadForm() {
   });
 }
 
+// Pricing data for different plans
+const PRICING_DATA = {
+  elite: {
+    '3month': 8999,
+    '6month': 8499,
+    '12month': 7999,
+  },
+  business: {
+    '3month': 11499,
+    '6month': 10999,
+    '12month': 10499,
+  },
+};
+
+let currentPlan: 'elite' | 'business' = 'elite';
+
+// Update pricing display based on selected plan
+function updatePricingDisplay() {
+  const prices = PRICING_DATA[currentPlan];
+  
+  const price3month = document.querySelector('#price-3month');
+  const price6month = document.querySelector('#price-6month');
+  const price12month = document.querySelector('#price-12month');
+  
+  if (price3month) price3month.textContent = `₹${prices['3month'].toLocaleString('en-IN')}`;
+  if (price6month) price6month.textContent = `₹${prices['6month'].toLocaleString('en-IN')}`;
+  if (price12month) price12month.textContent = `₹${prices['12month'].toLocaleString('en-IN')}`;
+}
+
+// Initialize plan toggle
+function initPlanToggle() {
+  const toggle = document.querySelector('#plan-toggle');
+  const labels = document.querySelectorAll('.plan-label');
+  
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      currentPlan = currentPlan === 'elite' ? 'business' : 'elite';
+      toggle.classList.toggle('active', currentPlan === 'business');
+      
+      // Update active label
+      labels.forEach(label => {
+        const plan = label.getAttribute('data-plan');
+        label.classList.toggle('active', plan === currentPlan);
+      });
+      
+      updatePricingDisplay();
+    });
+    
+    // Set initial active state
+    labels.forEach(label => {
+      const plan = label.getAttribute('data-plan');
+      label.classList.toggle('active', plan === currentPlan);
+    });
+  }
+}
+
 // Initialize smooth scroll
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -170,4 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initLeadForm();
   initSmoothScroll();
+  initPlanToggle();
+  updatePricingDisplay();
 });

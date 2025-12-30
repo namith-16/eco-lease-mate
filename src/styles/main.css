@@ -231,8 +231,65 @@ body {
   text-align: center;
   font-size: var(--text-xl);
   color: hsl(var(--muted-foreground));
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
   font-weight: 600;
+}
+
+/* Plan Toggle Switch */
+.plan-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 3rem;
+}
+
+.plan-label {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.plan-label.active {
+  color: hsl(var(--primary));
+}
+
+.plan-toggle {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  background: hsl(var(--border));
+  border: 2px solid hsl(var(--border));
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.plan-toggle:hover {
+  border-color: hsl(var(--primary));
+}
+
+.plan-toggle:focus {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background: hsl(var(--primary));
+  border-radius: 50%;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-md);
+}
+
+.plan-toggle.active .toggle-slider {
+  left: calc(100% - 26px);
 }
 
 /* Pricing Grid */
