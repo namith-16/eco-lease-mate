@@ -175,6 +175,18 @@ function updatePricingDisplay() {
   if (price3month) price3month.textContent = `₹${prices['3month'].toLocaleString('en-IN')}`;
   if (price6month) price6month.textContent = `₹${prices['6month'].toLocaleString('en-IN')}`;
   if (price12month) price12month.textContent = `₹${prices['12month'].toLocaleString('en-IN')}`;
+  
+  // Update pricing accent colors
+  const root = document.documentElement;
+  if (currentPlan === 'business') {
+    root.style.setProperty('--pricing-accent', 'var(--eco-orange)');
+    root.style.setProperty('--pricing-accent-light', 'var(--eco-orange-light)');
+    root.style.setProperty('--pricing-glow', '0 0 40px hsl(24 95% 53% / 0.4)');
+  } else {
+    root.style.setProperty('--pricing-accent', 'var(--eco-green)');
+    root.style.setProperty('--pricing-accent-light', 'var(--eco-green-light)');
+    root.style.setProperty('--pricing-glow', '0 0 40px hsl(158 64% 52% / 0.4)');
+  }
 }
 
 // Initialize plan toggle
